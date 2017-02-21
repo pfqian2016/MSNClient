@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="1dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp" >
+
+    <TextView
+        android:id="@+id/title_textview_listitems_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="2dp"
+        android:text="TextView" />
+    <CheckBox
+         android:id="@+id/checkBox1_listitems_register"
+         android:layout_width="50dp"
+         android:layout_height="40dp"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/title_textview_listitems_register"
+         android:background="@drawable/checkbox_selector"
+         android:button="@null"
+         android:gravity="center"
+         android:text="运动" />
+    <CheckBox
+     	android:id="@+id/checkBox2_listitems_register"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/checkBox1_listitems_register"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/checkBox1_listitems_register"
+       	android:background="@drawable/checkbox_selector"
+        android:gravity="center"
+        android:button="@null"
+        android:text="音乐" />
+    <CheckBox
+     	android:id="@+id/checkBox3_listitems_register"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/checkBox2_listitems_register"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/checkBox2_listitems_register"
+      	android:background="@drawable/checkbox_selector"
+        android:gravity="center"
+        android:button="@null"
+        android:text="明星" />
+     <CheckBox
+     	android:id="@+id/checkBox4_listitems_register"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/checkBox3_listitems_register"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/checkBox3_listitems_register"
+      	android:background="@drawable/checkbox_selector"
+        android:gravity="center"
+        android:button="@null"
+        android:text="舞蹈" />
+     <CheckBox
+     	android:id="@+id/checkBox5_listitems_register"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/checkBox4_listitems_register"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/checkBox4_listitems_register"
+      	android:background="@drawable/checkbox_selector"
+        android:gravity="center"
+        android:button="@null"
+        android:text="音乐" />
+
+
+</RelativeLayout>

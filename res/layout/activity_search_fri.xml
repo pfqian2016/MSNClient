@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 
+    tools:context="com.android.mobilesocietynetwork.client.SearchFriActivity" >
+    
+<RelativeLayout
+	    android:id="@+id/relativelayout1_search_fri"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:layout_alignParentTop="true"
+	    android:background="@color/uestcblue"
+		>
+
+        <TextView
+            android:id="@+id/recommend_fri_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Search by conditions"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+		
+	</RelativeLayout>
+	
+	<RelativeLayout
+	    android:id="@+id/relativelayout2_search_fri"
+	    android:layout_below="@+id/relativelayout1_search_fri"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+		>
+   
+     <Spinner   
+        android:id="@+id/spinnerLocationStatic"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+       android:layout_marginLeft="5dp"
+        android:entries="@array/locationArray"/>
+
+     		<Spinner
+		    android:id="@+id/spinnerSexStatic"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		     android:layout_marginLeft="155dp"
+		    android:entries="@array/sexArray" />
+
+		<Spinner
+		    android:id="@+id/spinnerAgeStatic"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+       android:layout_marginLeft="205dp"
+		    android:entries="@array/ageArray" />
+  </RelativeLayout>
+
+		<Button
+		    android:id="@+id/buttonSearchFri"
+		    android:layout_width="300dp"
+		    android:layout_height="40dp"
+		    android:layout_centerHorizontal="true"
+		    android:layout_below="@+id/relativelayout2_search_fri"
+		    android:background="@color/uestcblue"
+		    android:text="search" 
+		    android:textColor="#FFFFFF"/>
+
+		<ListView
+		    android:id="@+id/listViewSearchFri"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/textViewSearchFri" >
+
+		</ListView>
+
+		<TextView
+		    android:id="@+id/textViewSearchFri"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/buttonSearchFri"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="22dp"
+		    android:layout_weight="1"
+		    android:gravity="center"
+		    android:text="———————results————————"
+		    android:textColor="@color/uestcblue"
+		    android:textSize="18sp" />
+
+</RelativeLayout>

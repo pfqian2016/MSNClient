@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.android.mobilesocietynetwork.client.RecommendComActivity" >
+
+   <FrameLayout
+        android:id="@+id/frameLayout_recommend_com"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@color/uestcblue" >
+
+        <TextView
+            android:id="@+id/recommend_com_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Recommend Community"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/listView_recommend_com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLayout_recommend_com"
+        android:layout_centerHorizontal="true"
+        >
+    </ListView>
+
+</RelativeLayout>

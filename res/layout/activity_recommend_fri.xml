@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.android.mobilesocietynetwork.client.RecommendFriActivity" >
+    <RelativeLayout
+	    android:id="@+id/relativelayout1_recommend_fri"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:layout_alignParentTop="true"
+	    android:background="@color/uestcblue"
+		>
+
+        <TextView
+            android:id="@+id/recommend_fri_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Recommend Friends"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+		
+	</RelativeLayout>
+	<RelativeLayout
+	    android:id="@+id/relativelayout2_recommend_fri"
+	    android:layout_below="@+id/relativelayout1_recommend_fri"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+		>
+
+		<ListView
+		    android:id="@+id/listView_recommend_fri"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginTop="10dp"
+		     >
+		</ListView>
+		
+	</RelativeLayout>
+	
+
+</RelativeLayout>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	android:descendantFocusability="blocksDescendants"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+				<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				        android:background="@drawable/notice_item_background"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp" >
+			<LinearLayout 
+			    android:orientation="horizontal"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content">
+	
+
+	<LinearLayout android:layout_height="wrap_content"  
+		android:layout_width="fill_parent"
+		 android:orientation="vertical">
+	
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_marginRight="3.0dip">
+				<!-- 活动名称-->
+				<TextView
+				     android:textSize="20.0dp" 
+				     android:textColor="#ff333333"
+					android:id="@+id/tvItemName"
+					 android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					 android:text="name" />
+				<RelativeLayout
+				     android:gravity="right"
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:layout_marginRight="3.0dip"
+					 android:layout_weight="1.0">
+				<!--距离 -->
+					<TextView 
+					    android:textSize="12.0dp" 
+					    android:textColor="#ff666666"
+					    android:layout_gravity="right" 
+						android:id="@+id/tvItemDistance"
+						android:layout_width="wrap_content"
+						 android:layout_height="wrap_content"
+						android:layout_marginLeft="3.0dip" 
+						android:text="0km"
+						android:layout_alignParentRight="true" />
+				</RelativeLayout>
+			</LinearLayout>
+			<!--标签 -->
+
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginRight="3.0dip"
+			    android:orientation="horizontal" >
+
+			    <TextView
+			        android:id="@+id/tvItemLabel1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="2.0dip"
+			        android:background="@color/uestcblue"
+			        android:focusable="false"
+			        android:visibility="gone"
+			        android:text="标签1"
+			        android:textColor="@color/white"
+			        android:textSize="10.0dp" />
+
+			    <TextView
+			        android:id="@+id/tvItemLabel2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="2.0dip"
+			        android:background="@color/uestcblue"
+			        android:focusable="false"
+			        android:text="标签2"
+			        android:visibility="gone"
+			        android:textColor="@color/white"
+			        android:textSize="10.0dp" />
+
+			    <TextView
+			        android:id="@+id/tvItemLabel3"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="2.0dip"
+			        android:background="@color/uestcblue"
+			        android:focusable="false"
+			        android:text="标签3"
+			        android:visibility="gone"
+			        android:textColor="@color/white"
+			        android:textSize="10.0dp" />
+			    <TextView
+			        android:id="@+id/tvItemLabel4"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="2.0dip"
+			        android:background="@color/uestcblue"
+			        android:focusable="false"
+			        android:text="标签4"
+			        android:visibility="gone"
+			        android:textColor="@color/white"
+			        android:textSize="10.0dp" />
+			    			    <TextView
+			        android:id="@+id/tvItemLabel5"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="2.0dip"
+			        android:background="@color/uestcblue"
+			        android:focusable="false"
+			        android:text="标签5"
+			        android:visibility="gone"
+			        android:textColor="@color/white"
+			        android:textSize="10.0dp" />
+			</LinearLayout>
+
+			<!--内容 -->
+			<TextView
+			     android:id="@+id/tvItemContent"
+			     android:textSize="15.0dp" 
+			     android:textColor="#ff414951"
+				 android:focusable="false"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10.0dip" 
+				android:autoLink="all"
+				android:text="活动内容" />
+			 <!--其他信息 -->	
+				<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10.0dip"
+				android:layout_marginRight="3.0dip">
+				<TextView
+				     android:textSize="12.0dp" 
+				     android:textColor="#ff333333"
+					 android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					 android:text="Publisher：" />
+			<TextView
+			    	android:id="@+id/tvItemInformer"
+				     android:textSize="12.0dp" 
+				     android:textColor="#ff333333"
+					 android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					 android:text="" />	
+			</LinearLayout>	
+	<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip"
+				android:layout_marginRight="3.0dip">
+				<TextView
+				     android:textSize="12.0dp" 
+				     android:textColor="#ff333333"
+					 android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					 android:text="Time：" />
+			<TextView
+			    	android:id="@+id/tvItemStartTime"
+				     android:textSize="12.0dp" 
+				     android:textColor="#ff333333"
+					 android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					 android:text="" />	
+			</LinearLayout>	
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip"
+				android:layout_marginRight="3.0dip">
+				<TextView
+				     android:textSize="12.0dp" 
+				     android:textColor="#ff333333"
+					 android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					 android:text="Place：" />
+			<TextView
+			    	android:id="@+id/tvItemLocation"
+				     android:textSize="12.0dp" 
+				     android:textColor="#ff333333"
+					 android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					 android:text="" />	
+			</LinearLayout>	
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip"
+				android:layout_marginRight="3.0dip">
+				<TextView
+				     android:textSize="12.0dp" 
+				     android:textColor="#ff333333"
+					 android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					 android:text="Limit：" />
+			<TextView
+			    	android:id="@+id/tvItemLimit"
+				     android:textSize="12.0dp" 
+				     android:textColor="#ff333333"
+					 android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					 android:text="" />	
+			
+			</LinearLayout>
+
+			
+					<!-- Qian add a ImageView here on March 1st -->
+			
+			    <ImageView android:id="@+id/ivItemImage"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5dp"
+			        android:layout_gravity="center"
+			        android:visibility="visible"/>
+
+	</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+
+	           <LinearLayout
+                android:id="@+id/btParticipant"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:focusable="false"
+                android:focusableInTouchMode="false" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                     android:background="@drawable/notice_item_contact" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="participants"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+                        <TextView
+                    android:id="@+id/tvItemPeopleNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+           android:layout_marginLeft="2dp"
+                    android:text="999"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            	           <LinearLayout
+                android:id="@+id/btComment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/notice_item_comment" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+                    android:text="comment"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+                        	           <LinearLayout
+                android:id="@+id/btDelete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="5dp"
+                      android:background="@drawable/notice_item_delet" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+                    android:text="delete"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+	</LinearLayout>
+</LinearLayout>
+</RelativeLayout>

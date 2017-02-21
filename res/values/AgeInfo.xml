@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+      <string-array name="ageArray">  
+        <item>0to20</item>  
+        <item>20to30</item>
+         <item>30to40</item>
+         <item>older than40</item>                            
+    </string-array>    
+</resources>

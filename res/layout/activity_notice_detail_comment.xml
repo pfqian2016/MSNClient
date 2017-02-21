@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ListView
+        android:id="@+id/lvcomments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout_bottom"
+        android:layout_centerHorizontal="true"/>
+                    <LinearLayout 
+                            android:id="@+id/linearLayout_bottom"
+                       android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                                android:padding="5dp"
+                            android:orientation="horizontal" 
+                            android:layout_alignParentBottom="true"
+                    android:background="@color/bg_gray"  >
+                                        <EditText
+                        android:id="@+id/etComment"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.8"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/edittext1"
+                        android:singleLine="true"
+                        android:hint="我也说一句"
+                        android:textSize="18sp"/>
+ 
+                    <Button
+                        android:id="@+id/btSend"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="0.2"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/chat_send_button_bg"
+                        android:text="发送"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+
+                    </LinearLayout>
+
+</RelativeLayout>

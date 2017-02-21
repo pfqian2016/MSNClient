@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.android.mobilesocietynetwork.client.CreateComFirstActivity" >
+
+   <FrameLayout
+       android:id="@+id/frameLayout_create_com"
+       android:layout_width="fill_parent"
+       android:layout_height="40dip"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentRight="true"
+       android:background="@color/uestcblue" >
+
+        <TextView
+            android:id="@+id/create_com_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Create Community"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </FrameLayout>
+    
+   <LinearLayout
+       android:id="@+id/LinearLayoutComName"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/frameLayout_create_com"
+       android:layout_centerHorizontal="true"
+       android:orientation="horizontal" >
+          <TextView
+           android:id="@+id/TextViewComName"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Name：" />
+
+       <EditText
+           android:id="@+id/EditTextComName"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:minWidth="180dip" >
+
+           <requestFocus />
+       </EditText>
+   </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutComPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayoutComName"
+             android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextViewPassWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password：" />
+
+        <EditText
+            android:id="@+id/EditTextPassWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="180dip"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+      <LinearLayout
+        android:id="@+id/LinearLayoutComRePw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayoutComPw"
+             android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextViewRePassWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm：" />
+
+        <EditText
+            android:id="@+id/EditTextRePassWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="180dip"
+            android:inputType="textPassword" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearLayoutComOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayoutComRePw"
+             android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+        <RadioGroup
+	        android:id="@+id/radioGroupCom"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        
+	        <RadioButton
+	            android:id="@+id/radioButtonComOption1"
+	            android:layout_width="100dp"
+	            android:layout_height="wrap_content"
+	            android:text="permanent" />
+	        <RadioButton
+	            android:id="@+id/radioButtonComOption2"
+	            android:layout_width="100dp"
+	            android:layout_height="wrap_content"
+	            android:text="temporary" />
+      </RadioGroup>   
+    </LinearLayout>
+
+
+        <Button
+            android:id="@+id/ButtonCreateComNext"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:background="@color/uestcblue"
+            android:text="Next Step" 
+            android:textColor="#FFFFFF"
+            />
+
+   
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/uestcblue"
+    android:focusable="true"  
+   android:focusableInTouchMode="true">
+            <LinearLayout 
+          android:layout_width="match_parent"
+        android:layout_height="match_parent"
+          android:layout_marginTop="40dp"
+          android:padding="5dp"
+         android:orientation="vertical"
+         android:background="@color/bg_gray" >
+          <LinearLayout 
+           android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+          android:orientation="horizontal" 
+           android:background="@color/white" >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Server IP："
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+      <EditText
+            android:id="@+id/et_ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+               android:maxLength="15"  
+            android:textSize="15sp" />
+          </LinearLayout>
+                            <LinearLayout 
+           android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+          android:orientation="horizontal" 
+           android:background="@color/white" >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Server Domain："
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+      <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="5dp"
+              android:maxLength="30"  
+              android:singleLine="true"
+            android:textSize="15sp" />
+          </LinearLayout>
+           
+                    <LinearLayout 
+           android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+          android:orientation="horizontal" 
+           android:background="@color/white" >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Server Port："
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+      <EditText
+            android:id="@+id/et_port"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+             android:maxLength="30"  
+              android:singleLine="true"
+            android:textSize="15sp" />
+          </LinearLayout>
+            <Button
+           android:id="@+id/bt_Submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:layout_marginTop="50dp"
+            android:background="@color/uestcblue"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="Sure"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+           
+      
+     </LinearLayout>
+
+<Button
+     android:id="@+id/bt_Quit"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_gravity="left"
+    android:background="@drawable/selector_btn_back"
+        android:text="Back"
+    android:textSize="15sp"
+    android:textColor="@color/white" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Network Configure"
+    android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+    android:textColor="@color/white"
+    android:textSize="18sp" />
+
+</FrameLayout>
+

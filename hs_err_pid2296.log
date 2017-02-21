@@ -1,0 +1,155 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:127), pid=2296, tid=5868
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (8.0_45-b15) (build )
+# Java VM: Java HotSpot(TM) Client VM (25.45-b02 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00b5bc00):  JavaThread "Unknown thread" [_thread_in_vm, id=5868, stack(0x00b00000,0x00b50000)]
+
+Stack: [0x00b00000,0x00b50000],  sp=0x00b4f5cc,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1a4f8b]
+V  [jvm.dll+0x19d846]
+V  [jvm.dll+0x42269]
+V  [jvm.dll+0x4241e]
+V  [jvm.dll+0x5193e]
+V  [jvm.dll+0xa86ae]
+V  [jvm.dll+0xa8972]
+V  [jvm.dll+0x154631]
+V  [jvm.dll+0x17869b]
+V  [jvm.dll+0xe51a1]
+C  [javaw.exe+0x14d3]
+C  [javaw.exe+0x2047]
+C  [javaw.exe+0xadff]
+C  [javaw.exe+0xae89]
+C  [KERNEL32.DLL+0x1495d]
+C  [ntdll.dll+0x498ee]
+C  [ntdll.dll+0x498c4]
+C  0x00000000
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00b5bc00 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=5868, stack(0x00b00000,0x00b50000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.085 loading class java/lang/CharSequence done
+Event: 0.085 loading class java/lang/String done
+Event: 0.085 loading class java/lang/Class
+Event: 0.085 loading class java/lang/reflect/AnnotatedElement
+Event: 0.085 loading class java/lang/reflect/AnnotatedElement done
+Event: 0.085 loading class java/lang/reflect/GenericDeclaration
+Event: 0.085 loading class java/lang/reflect/GenericDeclaration done
+Event: 0.085 loading class java/lang/reflect/Type
+Event: 0.086 loading class java/lang/reflect/Type done
+Event: 0.086 loading class java/lang/Class done
+
+
+Dynamic libraries:
+0x01000000 - 0x01033000 	D:\qpf\Java\jdk1.8.0_45\bin\javaw.exe
+0x77140000 - 0x772a8000 	C:\Windows\SYSTEM32\ntdll.dll
+0x74f40000 - 0x75080000 	C:\Windows\SYSTEM32\KERNEL32.DLL
+0x75310000 - 0x753df000 	C:\Windows\SYSTEM32\KERNELBASE.dll
+0x74440000 - 0x744da000 	C:\Windows\system32\apphelp.dll
+0x58330000 - 0x58582000 	C:\Windows\AppPatch\AcGenral.DLL
+0x75250000 - 0x7530e000 	C:\Windows\SYSTEM32\msvcrt.dll
+0x75080000 - 0x750be000 	C:\Windows\SYSTEM32\sechost.dll
+0x74b70000 - 0x74b8d000 	C:\Windows\SYSTEM32\SspiCli.dll
+0x76990000 - 0x769d1000 	C:\Windows\SYSTEM32\SHLWAPI.dll
+0x72db0000 - 0x72e8c000 	C:\Windows\SYSTEM32\UxTheme.dll
+0x74b90000 - 0x74ce0000 	C:\Windows\SYSTEM32\USER32.dll
+0x76880000 - 0x76988000 	C:\Windows\SYSTEM32\GDI32.dll
+0x73dc0000 - 0x73de0000 	C:\Windows\SYSTEM32\WINMM.dll
+0x72d90000 - 0x72da2000 	C:\Windows\SYSTEM32\samcli.dll
+0x76770000 - 0x7687b000 	C:\Windows\SYSTEM32\ole32.dll
+0x76c50000 - 0x76cd7000 	C:\Windows\SYSTEM32\OLEAUT32.dll
+0x71340000 - 0x71355000 	C:\Windows\SYSTEM32\MSACM32.dll
+0x749b0000 - 0x749b8000 	C:\Windows\SYSTEM32\VERSION.dll
+0x753e0000 - 0x76583000 	C:\Windows\SYSTEM32\SHELL32.dll
+0x74640000 - 0x74659000 	C:\Windows\SYSTEM32\USERENV.dll
+0x72ab0000 - 0x72ac9000 	C:\Windows\SYSTEM32\dwmapi.dll
+0x72730000 - 0x72851000 	C:\Windows\SYSTEM32\urlmon.dll
+0x74ce0000 - 0x74d57000 	C:\Windows\SYSTEM32\ADVAPI32.dll
+0x743c0000 - 0x7441e000 	C:\Windows\SYSTEM32\WINSPOOL.DRV
+0x72fa0000 - 0x72fb4000 	C:\Windows\SYSTEM32\MPR.dll
+0x75190000 - 0x75241000 	C:\Windows\SYSTEM32\RPCRT4.dll
+0x74b60000 - 0x74b69000 	C:\Windows\SYSTEM32\CRYPTBASE.dll
+0x74d60000 - 0x74eae000 	C:\Windows\SYSTEM32\combase.dll
+0x73da0000 - 0x73dc0000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x74630000 - 0x7463e000 	C:\Windows\SYSTEM32\profapi.dll
+0x73de0000 - 0x73ff5000 	C:\Windows\SYSTEM32\iertutil.dll
+0x741f0000 - 0x743b4000 	C:\Windows\SYSTEM32\WININET.dll
+0x74b00000 - 0x74b51000 	C:\Windows\SYSTEM32\bcryptPrimitives.dll
+0x75140000 - 0x7517a000 	C:\Windows\SYSTEM32\cfgmgr32.dll
+0x73d80000 - 0x73d9f000 	C:\Windows\SYSTEM32\DEVOBJ.dll
+0x74930000 - 0x749a7000 	C:\Windows\SYSTEM32\SHCORE.DLL
+0x750c0000 - 0x750e5000 	C:\Windows\system32\IMM32.DLL
+0x76ad0000 - 0x76bc7000 	C:\Windows\SYSTEM32\MSCTF.dll
+0x74000000 - 0x741e5000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.16384_none_a9f4965301334e09\COMCTL32.dll
+0x72880000 - 0x7293f000 	D:\qpf\Java\jdk1.8.0_45\bin\msvcr100.dll
+0x5f840000 - 0x5fc00000 	D:\qpf\Java\jdk1.8.0_45\bin\client\jvm.dll
+0x72990000 - 0x72998000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x76ee0000 - 0x76ee6000 	C:\Windows\SYSTEM32\PSAPI.DLL
+0x76e90000 - 0x76edd000 	C:\Windows\SYSTEM32\WS2_32.dll
+0x76760000 - 0x76767000 	C:\Windows\SYSTEM32\NSI.dll
+0x72980000 - 0x7298c000 	D:\qpf\Java\jdk1.8.0_45\bin\verify.dll
+0x722f0000 - 0x72311000 	D:\qpf\Java\jdk1.8.0_45\bin\java.dll
+0x72590000 - 0x725a3000 	D:\qpf\Java\jdk1.8.0_45\bin\zip.dll
+0x734d0000 - 0x73618000 	C:\Windows\SYSTEM32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:D:\qpf\SDK24.0.2\platforms\android-22\android.jar 
+java_command: com.android.mobilesocietynetwork.client.packet.RecommendNoticePacket
+java_class_path (initial): D:\qpf\eclipse\Workspace\MSNclientOpenfire1020\MSNclientOpenfire1020\libs\sun.misc.BASE64Decoder.jar;D:\qpf\eclipse\Workspace\MSNclientOpenfire1020\MSNclientOpenfire1020\libs\org.json.jar;D:\qpf\eclipse\Workspace\MSNclientOpenfire1020\MSNclientOpenfire1020\libs\locSDK_4.2.jar;D:\qpf\eclipse\Workspace\MSNclientOpenfire1020\MSNclientOpenfire1020\libs\asmack.jar;D:\qpf\eclipse\Workspace\MSNclientOpenfire1020\MSNclientOpenfire1020\libs\android-support-v4.jar;D:\qpf\eclipse\Workspace\MSNclientOpenfire1020\MSNclientOpenfire1020\libs\baidumapapi_v3_0_0.jar;D:\qpf\eclipse\Workspace\MSNclientOpenfire1020\MSNclientOpenfire1020\bin\classes
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\qpf\Java\jdk1.8.0_45
+CLASSPATH=.;D:\qpf\Java\jdk1.8.0_45/lib/dt.jar;D:\qpf\Java\jdk1.8.0_45/lib/tools.jar
+PATH=D:/qpf/Java/jdk1.8.0_45/bin/client;D:/qpf/Java/jdk1.8.0_45/bin;D:/qpf/Java/jdk1.8.0_45/lib/i386;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\qpf\Java\jdk1.8.0_45/bin;D:\qpf\Java\jdk1.8.0_45/jre/bin;D:\qpf\eclipse-neon\eclipse-android-neon-R-incubation-win32\eclipse;
+USERNAME=qianpf
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8.1 , 64 bit Build 9600 (6.3.9600.16408)
+
+CPU:total 4 (4 cores per cpu, 1 threads per core) family 6 model 94 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, rtm, 3dnowpref, lzcnt, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 8276176k(4848156k free), swap 10242256k(6081764k free)
+
+vm_info: Java HotSpot(TM) Client VM (25.45-b02) for windows-x86 JRE (1.8.0_45-b15), built on Apr 30 2015 12:31:00 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Wed Oct 26 13:36:41 2016
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

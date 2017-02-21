@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/make_response"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+		<TextView
+		    android:id="@+id/auditedMsgBack"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:ems="10"
+		    android:gravity="left|top"
+		    android:inputType="textMultiLine"
+		    android:background="@drawable/edittext1"
+		    android:minLines="6" 
+		    />
+		
+
+
+</LinearLayout>

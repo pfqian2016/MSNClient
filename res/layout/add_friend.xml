@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/add_friend"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+		<EditText
+		    android:id="@+id/auditedMsg"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:ems="10"
+		    android:gravity="left|top"
+		    android:hint="你好，我是......"
+		    android:inputType="textMultiLine"
+		    android:background="@drawable/edittext1"
+		    android:minLines="6" >
+
+		    <requestFocus />
+		</EditText>
+
+		<Button
+		    android:id="@+id/button1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="发送"
+		    android:onClick="WaitToBeAudited" />
+
+</LinearLayout>

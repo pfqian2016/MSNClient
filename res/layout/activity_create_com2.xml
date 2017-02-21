@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.android.mobilesocietynetwork.client.CreateComFirstActivity" >
+
+    <FrameLayout
+        android:id="@+id/frameLayout_create_com2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/uestcblue" >
+
+        <TextView
+            android:id="@+id/create_com_tab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Choose Community Type"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/ButtonCreateComOK"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/uestcblue"
+        android:text="Complete"
+        android:textColor="#FFFFFF" />
+    
+    <ExpandableListView
+        android:id="@+id/comTypeList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ButtonCreateComOK"
+        android:layout_below="@+id/frameLayout_create_com2"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_weight="10"
+        android:dividerHeight="2dp" />
+
+</RelativeLayout>

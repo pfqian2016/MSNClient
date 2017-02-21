@@ -1,0 +1,160 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/uestcblue">
+
+     <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="125dp"
+         android:background="@color/white" >
+
+<TextView
+    android:id="@+id/tv_userInfoName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="28dp"
+    android:text="test"
+    android:textSize="15sp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="80dp"
+    android:text="sex："
+    android:textColor="@color/gray"
+    android:textSize="15sp" />
+<TextView
+    android:id="@+id/tv_userInfoSex"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="100dp"
+    android:layout_marginTop="80dp"
+    android:text="test"
+    android:textSize="15sp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="120dp"
+    android:text="age："
+    android:textColor="@color/gray"
+    android:textSize="15sp" />
+<TextView
+    android:id="@+id/tv_userInfoAge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="100dp"
+    android:layout_marginTop="120dp"
+    android:text="test"
+    android:textSize="15sp" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="160dp"
+    android:text="location:"
+    android:textColor="@color/gray"
+    android:textSize="15sp" />
+<TextView
+    android:id="@+id/tv_userInfoSite"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="100dp"
+    android:layout_marginTop="160dp"
+    android:text="test"
+    android:textSize="15sp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="200dp"
+    android:text="mail："
+   android:textColor="@color/gray"
+    android:textSize="15sp" />
+<TextView
+    android:id="@+id/tv_userInfoEmail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="100dp"
+    android:layout_marginTop="200dp"
+    android:text="test"
+    android:textSize="15sp" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="240dp"
+    android:text="tel："
+   android:textColor="@color/gray"
+    android:textSize="15sp" />
+<TextView
+    android:id="@+id/tv_userInfoTel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="100dp"
+    android:layout_marginTop="240dp"
+    android:text="test"
+    android:textSize="15sp" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="280dp"
+    android:text="tags："
+   android:textColor="@color/gray"
+    android:textSize="15sp" />
+<TextView
+    android:id="@+id/tv_userInfoLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="100dp"
+    android:layout_marginTop="280dp"
+    android:text="test"
+    android:textSize="15sp" />
+<Button
+           android:id="@+id/bt_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00BFFF"
+            android:layout_alignParentBottom="true"
+            android:text="quit"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    
+  <ImageView 
+      android:id="@+id/iv_userImage"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_marginTop="100dp"
+          android:layout_gravity="center_horizontal"
+          android:src="@drawable/f1"/>
+
+<Button
+    android:id="@+id/bt_editUserInfo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:background="@color/uestcblue"
+    android:text="edit"
+    android:textSize="15sp"
+    android:textColor="@color/white" />
+<Button
+     android:id="@+id/bt_backUserInfo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:background="@color/uestcblue"
+        android:text="back"
+    android:textSize="15sp"
+    android:textColor="@color/white" />
+
+
+</FrameLayout>
+

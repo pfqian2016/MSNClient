@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/community"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:id="@+id/Frame_BottemView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" 
+        android:background="@color/bg_gray">
+
+        <LinearLayout
+            android:id="@+id/community_action_creation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                          android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:adjustViewBounds="false"
+                android:src="@drawable/community_button_add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="create"
+                android:textColor="@color/black"
+                android:textSize="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/community_action_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                     android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/friend_button_recommend" />
+
+            <TextView
+         
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="recommend"
+                android:textColor="@color/black"
+                android:textSize="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/community_action_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/friend_button_search" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="search"
+                android:textColor="@color/black"
+                android:textSize="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+	  <ScrollView   
+        android:layout_width="fill_parent"
+        android:layout_height="360dp">
+    	<LinearLayout
+    	    android:id="@+id/community_items"
+       		android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical"
+          android:layout_above="@+id/Frame_BottemView" >
+    	</LinearLayout>
+    </ScrollView>
+ 
+
+</RelativeLayout>

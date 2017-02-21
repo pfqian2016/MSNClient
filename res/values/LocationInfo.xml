@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+      <string-array name="locationArray">  
+        <item>0to1000m</item>  
+        <item>1000to3000m</item>
+         <item>3000to5000m</item>
+         <item>more than5000m</item>                            
+    </string-array>    
+</resources>

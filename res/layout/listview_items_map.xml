@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="1dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp" >
+
+    <ImageView
+        android:id="@+id/image_listitems_map"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:padding="2dip" />
+
+    <TextView
+        android:id="@+id/name_listitems_map"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/image_listitems_map"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="AAABBB"
+        android:textSize="13sp" />
+
+</RelativeLayout>

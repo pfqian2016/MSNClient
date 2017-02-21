@@ -1,0 +1,239 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/uestcblue"
+    android:focusable="true"  
+   android:focusableInTouchMode="true">
+
+            <LinearLayout 
+          android:layout_width="match_parent"
+        android:layout_height="match_parent"
+          android:layout_marginTop="40dp"
+          android:padding="5dp"
+         android:orientation="vertical"
+         android:background="@color/bg_gray" >
+          <LinearLayout 
+           android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+          android:orientation="horizontal" 
+           android:background="@color/white" >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Title"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+      <EditText
+            android:id="@+id/et_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+               android:maxLength="10"  
+            android:textSize="15sp" />
+          </LinearLayout>
+                            <LinearLayout 
+           android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+          android:orientation="horizontal" 
+           android:background="@color/white" >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Time"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+      <EditText
+            android:id="@+id/et_StartTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="5dp"
+              android:maxLength="30"  
+              android:singleLine="true"
+            android:textSize="15sp" 
+            android:focusable="false"
+        android:inputType="none"/>
+          </LinearLayout>
+           
+                    <LinearLayout 
+           android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+          android:orientation="horizontal" 
+           android:background="@color/white" >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Place"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+      <EditText
+            android:id="@+id/et_Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+             android:maxLength="30"  
+              android:singleLine="true"
+            android:textSize="15sp" />
+          </LinearLayout>
+ 
+
+                            <LinearLayout 
+           android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+          android:orientation="horizontal" 
+           android:background="@color/white" >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Profile"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+      <EditText
+            android:id="@+id/et_Content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+              android:maxLength="100" 
+            android:textSize="15sp" />
+          </LinearLayout>
+           <LinearLayout 
+           android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+          android:orientation="horizontal" 
+           android:background="@color/white" >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="People Limit"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+      <EditText
+            android:id="@+id/et_Limit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:maxLength="3"
+            android:hint="default:50"
+              android:numeric="integer"   
+            android:textSize="15sp" />
+          </LinearLayout>
+          
+            
+      <LinearLayout android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:orientation="horizontal"
+          android:background="@color/white">
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:text="Choose picture"
+              android:textColor="@color/gray"
+              android:textSize="15sp"/>
+          <Button android:id="@+id/bt_ChooseImage"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:layout_gravity="center_vertical"
+              android:background="@drawable/button_add"/>
+          <ImageView android:id="@+id/img_NoticePic"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:layout_marginLeft="10dp"
+              android:visibility="gone"/>
+      </LinearLayout>
+      
+         <!-- <LinearLayout android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:orientation="horizontal"
+          android:background="@color/white">
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:text="选择视频："
+              android:textColor="@color/gray"
+              android:textSize="15sp"/>
+          <Button android:id="@+id/bt_ChooseVideo"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:layout_gravity="center_vertical"
+              android:background="@drawable/button_add"/>
+          <VideoView android:id="@+id/video_NoticeVideo"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:layout_marginLeft="10dp"
+              android:visibility="gone"/>
+      </LinearLayout> -->
+     <LinearLayout 
+           android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+          android:orientation="horizontal" 
+           android:background="@color/white" >
+      <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Labels"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+          <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+                android:text="Select from forms"
+            android:textSize="15sp" />
+          </LinearLayout> 
+          <ListView
+                android:id="@+id/noticeTypeList"
+               android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_weight="10"
+        android:dividerHeight="2dp"/>
+     </LinearLayout>
+<Button
+    android:id="@+id/bt_Submit"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_gravity="right"
+    android:background="@color/uestcblue"
+    android:text="Post"
+    android:textSize="15sp"
+    android:textColor="@color/white" />
+<Button
+     android:id="@+id/bt_Quit"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_gravity="left"
+    android:background="@drawable/selector_btn_back"
+        android:text="Cancel"
+    android:textSize="15sp"
+    android:textColor="@color/white" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Create activity"
+    android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+    android:textColor="@color/white"
+    android:textSize="18sp" />
+<ImageView android:id="@+id/iv_fullscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"/>"
+    
+
+</FrameLayout>

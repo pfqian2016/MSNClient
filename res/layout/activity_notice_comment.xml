@@ -1,0 +1,99 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/uestcblue"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="40dp"
+        android:background="@color/white" >
+
+        <ListView
+            android:id="@+id/lvcomments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayout_bottom"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/img_NoticePic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@id/linearLayout_bottom"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_gray"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <EditText
+                android:id="@+id/etComment"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.8"
+                android:background="@drawable/edittext1"
+                android:hint="Say something"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/bt_ChooseImage"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/chat_send_button_bg"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btSend"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/chat_send_button_bg"
+                android:text="Send"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btBack"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:background="@drawable/selector_btn_back"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Comment"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+	<ImageView
+	    android:id="@+id/comment_full_img"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:visibility="gone"
+	    />
+</FrameLayout>

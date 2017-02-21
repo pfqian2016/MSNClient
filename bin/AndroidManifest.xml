@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.mobilesocietynetwork.client"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> 
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- Google Play filtering -->
+    <uses-feature
+        android:name="android.hardware.wifi.direct"
+        android:required="true" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="0i8YxdxzSu0MRDSThkdkGDLjtU2zE0rR" />
+
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.LaunchActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.chat.DialogActivity"
+            android:label="@string/title_activity_dialog" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.chat.FriendActivity"
+            android:label="@string/title_activity_friend" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.chat.CommunityActivity"
+            android:label="@string/title_activity_community" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.chat.MapActivity"
+            android:label="@string/title_activity_map" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.chat.SearchFriendActivity"
+            android:label="@string/title_activity_searchfriend" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.chat.QueryCommunityActivity"
+            android:label="@string/title_activity_query_community" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.RActivity"
+            android:label="@string/title_activity_r" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.chat.RecommendFriActivity"
+            android:label="@string/title_activity_recommend_fri" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.chat.RecommendComActivity"
+            android:label="@string/title_activity_recommend_com" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.chat.CreateComFirstActivity"
+            android:label="@string/title_activity_create_com" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.chat.CreateComSecondActivity"
+            android:label="@string/title_activity_create_com" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.chat.SearchFriActivity"
+            android:label="@string/title_activity_search_fri" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.UserCenterActivity"
+            android:label="@string/title_activity_user_center" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.UserCenterEditActivity"
+            android:label="@string/title_activity_user_center_edit" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.notice.NoticeActivity"
+            android:label="@string/title_activity_notice_list"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.notice.CommentNoticeActivity"
+            android:label="@string/title_activity_notice_comment" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.notice.CreateNoticeActivity"
+            android:label="@string/title_activity_create_notice" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.notice.ManageNoticeActivity"
+            android:label="@string/title_activity_manage_notice" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.notice.ManageCreatedNoticeActivity"
+            android:label="@string/title_activity_manage_created_notice" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.notice.ManageJoinedNoticeActivity"
+            android:label="@string/title_activity_manage_joined_notice" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.NetworkSetActivity"
+            android:label="@string/title_activity_network_set" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.notice.NoticeDetailActivity"
+            android:label="@string/title_activity_notice_detail" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.notice.NoticeDetailParticipantActivity"
+            android:label="@string/title_activity_notice_detail_participant" >
+        </activity>
+        <activity
+            android:name="com.android.mobilesocietynetwork.client.notice.NoticeDetailCommentActivity"
+            android:label="@string/title_activity_notice_detail_comment" >
+            
+        </activity>
+        <activity 
+            android:name="com.android.mobilesocietynetwork.client.notice.CommentDetailActivity">
+            
+        </activity>
+		<activity android:name="com.shareScreen.WiFiDirectActivity"
+		    	android:theme="@android:style/Theme.Holo"
+		      	android:label="@string/app_name"></activity>
+		<activity android:name="com.shareScreen.ShowActivity"
+		        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+		<service android:name="com.shareScreen.ServerService"></service>
+		
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <service android:name="com.android.mobilesocietynetwork.offline.MainService" >
+        </service>
+
+        <activity
+            android:name="com.example.android.wifidirect.discovery.WiFiServiceDiscoveryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.example.routedata.OperateRouteTable" >
+        </activity>
+        <activity android:name=".testActivity" >
+        </activity>
+        <service android:name="com.example.SCFData.TXTLog" >
+            <intent-filter>
+                <action android:name="com.example.SCFData.Service" />
+            </intent-filter>
+        </service>
+        <service android:name="com.example.routedata.SelectNextHop" >
+            <intent-filter>
+                <action android:name="com.example.routedata.SelectNextHop.service" />
+            </intent-filter>
+        </service>
+        <service android:name="com.example.SCFData.TransSCFDataService" >
+            <intent-filter>
+                <action android:name="TransSCFDataService.service" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.example.android.wifidirect.discovery.FileTransferService"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="testTransfile" />
+            </intent-filter>
+        </service>
+        <service android:name="com.android.mobilesocietynetwork.client.XmppService" />
+        <service android:name="com.android.mobilesocietynetwork.client.RecommendNoticeService" />
+       
+        <service android:name="com.msn.wqt.OfflineMsgService" >
+        </service>
+         <service android:name="com.shareScreen.ClientFileTransferService"/>
+       
+    </application>
+
+</manifest>

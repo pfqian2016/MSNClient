@@ -1,0 +1,171 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/uestcblue">
+
+        <LinearLayout 
+          android:layout_width="match_parent"
+        android:layout_height="match_parent"
+          android:layout_marginTop="40dp"
+          android:padding="5dp"
+         android:orientation="vertical"
+         android:background="#E5E5E5" >
+         
+          <LinearLayout 
+           android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+          android:orientation="horizontal" 
+           android:background="@color/white" >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="性别："
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+      <EditText
+            android:id="@+id/et_userInfoSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="#00000000"
+            android:textSize="18sp" />
+          </LinearLayout>
+
+                    <LinearLayout 
+           android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+          android:orientation="horizontal" 
+           android:background="@color/white" >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="年龄："
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+      <EditText
+            android:id="@+id/et_userInfoAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="#00000000"
+            android:textSize="18sp" />
+          </LinearLayout>
+                            <LinearLayout 
+           android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+          android:orientation="horizontal" 
+           android:background="@color/white" >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="所在地："
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+      <EditText
+            android:id="@+id/et_userInfoSite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="#00000000"
+            android:textSize="18sp" />
+          </LinearLayout>
+ 
+                    <LinearLayout 
+           android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+          android:orientation="horizontal" 
+           android:background="@color/white" >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="邮箱："
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+      <EditText
+            android:id="@+id/et_userInfoEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="#00000000"
+            android:textSize="18sp" />
+          </LinearLayout>
+                                  <LinearLayout 
+           android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+          android:orientation="horizontal" 
+           android:background="@color/white" >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="电话："
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+      <EditText
+            android:id="@+id/et_userInfoTel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="#00000000"
+            android:textSize="18sp" />
+          </LinearLayout>
+     <LinearLayout 
+           android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+          android:orientation="vertical" 
+           android:background="@color/white" >
+      <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="兴趣标签："
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+            <ListView
+                android:id="@+id/listView_label_register"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+     </LinearLayout>
+
+        </LinearLayout>
+
+<Button
+    android:id="@+id/bt_submitUserInfo"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_gravity="right"
+    android:background="@color/uestcblue"
+    android:text="完成"
+    android:textSize="15sp"
+    android:textColor="@color/white" />
+<Button
+     android:id="@+id/bt_quitUserInfo"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_gravity="left"
+    android:background="@color/uestcblue"
+        android:text="取消"
+    android:textSize="15sp"
+    android:textColor="@color/white" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="编辑资料"
+    android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+    android:textColor="@color/white"
+    android:textSize="18sp" />
+
+</FrameLayout>

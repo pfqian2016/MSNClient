@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MSN</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="friend">好友</string>
+    <string name="community">社团</string>
+    <string name="map">地图</string>
+    <string name="title_activity_main">activity_main</string>
+    <string name="title_activity_dialog">activity_dialog</string>
+    <string name="title_activity_friend">activity_friend</string>
+    <string name="title_activity_searchfriend">activity_searchdialog</string>
+    <string name="title_activity_map">activity_map</string>
+    <string name="title_activity_community">activity_community</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="title_activity_r">RActivity</string>
+    <string name="title_activity_query_community">QueryCommunityActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_recommend_fri">RecommendFriActivity</string>
+    <string name="title_activity_recommend_com">RecommendComActivity</string>
+    <string name="title_activity_create_com">CreateComActivity</string>
+    <string name="title_activity_search_fri">SearchFriActivity</string>
+    <string name="menu_settings">Settings</string>
+    <string name="no_data">没有找到符合条件的社团</string>
+    <string name="title_activity_user_center">UserCenterActivity</string>
+    <string name="title_activity_user_center_edit">UserCenterEditActivity</string>
+    <string name="title_activity_notice_list">NoticeListActivity</string>
+    <string name="title_activity_notice_comment">NoticeCommentActivity</string>
+    <string name="title_activity_create_notice">CreateNoticeActivity</string>
+    <string name="title_activity_manage_notice">ManageNoticeActivity</string>
+    <string name="title_activity_manage_created_notice">ManageCreatedNoticeActivity</string>
+    <string name="title_activity_manage_joined_notice">ManageJoinedNoticeActivity</string>
+    <string name="title_activity_network_set">NetworkSetActivity</string>
+    <string name="title_activity_notice_detail">NoticeDetailActivity</string>
+    <string name="title_activity_notice_detail_participant">NoticeDetailParticipantActivity</string>
+    <string name="title_activity_notice_detail_comment">NoticeDetailCommentActivity</string>
+	<string name="finding_service">Finding local services</string>
+    <string name="btn_send">Send</string>
+    <string name="txt_hint">Type Message</string>
+    
+    
+     <string name="enable_p2p_button">P2P On/Off</string>
+    <string name="discover_peers_button">Discover</string>
+    <string name="connect_peer_button">Connect</string>
+    <string name="disconnect_peer_button">Disconnect</string>
+    <string name="get_file_button">Launch Gallery</string>
+    <string name="empty"></string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="client_text">This device will act as a client. Click on Gallery button to pick a local(stored) file</string>
+    <string name="empty_message">No devices found. Turn on P2P and perform discovery from the Action Bar</string>
+    <string name="p2p_off_warning">Enable P2P from action bar button above or system settings</string>
+    <string name="group_owner_text">"Am I the Group Owner? "</string>
+    <string name="label_me">ME</string>
+    <string name="label_peers">PEERS</string>
+    
+</resources>

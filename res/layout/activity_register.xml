@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/uestcblue"
+    tools:context=".RegisterActivity" >
+
+    <TextView
+        android:id="@+id/title_textview_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_textview_register"
+        android:layout_margin="5dp"
+        android:background="@drawable/background_layout1_register"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <TextView
+            android:id="@+id/username_textview_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Username"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/username_edittext_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/username_textview_register"
+            android:layout_alignBottom="@+id/username_textview_register"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/username_textview_register"
+            android:ems="10" />
+
+
+        <TextView
+            android:id="@+id/password_textview_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/username_textview_register"
+            android:layout_below="@+id/username_textview_register"
+            android:layout_marginTop="30dp"
+            android:text="Password"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/password_edittext_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/password_textview_register"
+            android:layout_alignLeft="@+id/username_edittext_register"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/repassword_textview_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/password_textview_register"
+            android:layout_below="@+id/password_textview_register"
+            android:layout_marginTop="30dp"
+            android:text="Confirm password"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/repassword_edittext_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/repassword_textview_register"
+            android:layout_alignLeft="@+id/password_edittext_register"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/label_textview_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/relativeLayout1"
+            android:layout_below="@+id/repassword_textview_register"
+            android:layout_marginTop="21dp"
+            android:text="Tags"
+            android:textSize="12sp"
+            
+             />
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/label_textview_register"
+            >
+         
+            <ListView
+                android:id="@+id/listView_label_register"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+              	>
+            </ListView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+            <Button
+            android:id="@+id/reg_button_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+     android:background="@color/bg_gray"
+            android:text="Complete" 
+            android:textColor="@color/black"
+            />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:background="#ffffff">
+   <!--  <TextView
+        android:id="@+id/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:drawableTop="@drawable/picture"
+        android:text="图  片"
+        android:textSize="15dp"/>
+	<TextView
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:drawableTop="@drawable/camera"
+        android:text="拍  照"
+        android:textSize="15dp"/>
+	<TextView
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:drawableTop="@drawable/music"
+        android:text="音   频"
+        android:textSize="15dp"/>
+	<TextView
+        android:id="@+id/video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:drawableTop="@drawable/vedio"
+        android:text="视   频"
+        android:textSize="15dp"/> -->
+	<TextView
+        android:id="@+id/file"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:drawableTop="@drawable/file"
+        android:text="文  件"
+        android:textSize="15dp"/>
+	
+</LinearLayout>

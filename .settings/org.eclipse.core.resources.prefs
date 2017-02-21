@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//jni/decode.c=UTF-8
+encoding//jni/encode.c=UTF-8
+encoding//res/layout/activity_query_community.xml=UTF-8
+encoding//src/com/android/mobilesocietynetwork/client/chat/FriendActivity.java=UTF-8
+encoding//src/com/android/mobilesocietynetwork/client/util/MyDate.java=UTF-8
+encoding//src/com/android/mobilesocietynetwork/searchwidget/ExpandTabView.java=UTF-8
+encoding//src/com/android/mobilesocietynetwork/searchwidget/ListViewAdapter.java=UTF-8
+encoding//src/com/android/mobilesocietynetwork/searchwidget/TextAdapter.java=UTF-8
+encoding//src/com/android/mobilesocietynetwork/searchwidget/ViewBaseAction.java=UTF-8
+encoding//src/com/android/mobilesocietynetwork/searchwidget/ViewMiddle.java=UTF-8
+encoding//src/com/example/SCFData/SCFDataDBHelper.java=UTF-8
+encoding//src/com/example/SCFData/TXTLog.java=UTF-8
+encoding//src/com/example/SCFData/TransSCFData.java=UTF-8
+encoding//src/com/example/android/wifidirect/discovery/WiFiServiceDiscoveryActivity.java=UTF-8
+encoding//src/com/msn/wqt/OfflineMsgService.java=UTF-8
